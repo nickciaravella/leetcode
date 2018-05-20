@@ -1,0 +1,21 @@
+# https://leetcode.com/problems/lru-cache/discuss/45926/Python-Dict-+-Double-LinkedList
+# Hard
+
+Optimal data structure
+
+    {          head
+                |
+        a ---> Node
+                |
+        b ---> Node
+                |
+        c ---> Node
+                |
+               tail
+    }
+
+Doubly Linked List to maintain LRU order
+Dictionary with key being cache item and value being pointer to the node
+
+Dictionary - O(1) lookup for existance and locating in linked list
+Linked List - O(1) insert, remove with LRU always at the head
